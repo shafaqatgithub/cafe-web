@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# source media (already extracted to public/assets)
+/*.zip
+
+# markdown docs (kept local only)
+*.md

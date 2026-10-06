@@ -3,10 +3,10 @@
  *
  *  • Local assets (public/assets/) come from the project's own media:
  *      - video/burger-hero.mp4      ← the original SmokeReveal burger video
- *      - video/burger-hero-poster.jpg, images/burger*.jpg ← stills derived from it
+ *      - video/burger-hero-poster.jpg, images/burger.jpg ← stills derived from it
  *        (cropped so the generator's ✦ watermark in the bottom-right is excluded)
  *      - pizza-sequence/pizza-001…240.jpg ← the ezgif ZIP, extracted 1:1
- *  • Coffee + dessert photography does not exist in the project yet, so those
+ *  • Food photography for the menu (pizza, burgers, coffee, desserts) does not exist yet, so those
  *    entries use Unsplash photos as PLACEHOLDERS (Unsplash License). Replace `src`
  *    with files in public/assets/images/ — local files need no extra config.
  */
@@ -65,42 +65,50 @@ export const MEDIA = {
     height: 360,
     alt: "Sesame brioche cheeseburger with lettuce, tomato and melted cheddar on a walnut board.",
   },
-  burgerSmoke: {
-    src: "/assets/images/burger-smoke.jpg",
-    width: 480,
-    height: 360,
-    alt: "A cheeseburger half-hidden by curling wood smoke.",
-  },
-  pizza: {
-    src: frame(1),
-    focus: "90% 50%",
-    width: 640,
-    height: 360,
-    alt: "Wood-fired vegetable pizza with peppers, olives, mushrooms and basil, floating above a cream backdrop.",
-  },
-  pizzaLayers: {
-    src: frame(97),
-    focus: "90% 40%",
-    width: 640,
-    height: 360,
-    alt: "A pizza separated into floating layers of crust, sauce and toppings.",
-  },
-  pizzaPeel: {
-    src: frame(185),
-    focus: "88% 55%",
-    width: 640,
-    height: 360,
-    alt: "A pizza sliding on a peel into a stone oven.",
-  },
-  oven: {
-    src: frame(240),
-    focus: "100% 55%",
-    width: 640,
-    height: 360,
-    alt: "A pizza baking in an arched stone oven over a bright wood fire.",
-  },
 
   // ── PLACEHOLDERS (Unsplash) — replace with the café's own photography ──────
+  pizza: {
+    src: unsplash("1590947132387-155cc02f3212"),
+    width: 1200,
+    height: 800,
+    alt: "Vegetable pizza with tomatoes, mushrooms and herbs on a dark wooden board, one slice pulled away.",
+  },
+  margherita: {
+    src: unsplash("1574071318508-1cdbab80d002", 800),
+    width: 800,
+    height: 535,
+    alt: "Neapolitan margherita with a blistered crust, melted mozzarella and fresh basil.",
+  },
+  diavola: {
+    src: unsplash("1628840042765-356cda07504e", 800),
+    width: 800,
+    height: 800,
+    alt: "Wood-fired pizza covered in crisp, curled slices of spicy salami.",
+  },
+  bianca: {
+    src: unsplash("1513104890138-7c749659a591", 800),
+    width: 800,
+    height: 533,
+    alt: "Golden white pizza cut into slices, with rosemary and cherry tomatoes beside it.",
+  },
+  smokeHouse: {
+    src: unsplash("1586190848861-99aa4a171e90"),
+    width: 1200,
+    height: 1200,
+    alt: "Sesame-bun cheeseburger stacked with lettuce, tomato, bacon and melted cheese on a dark background.",
+  },
+  emberDouble: {
+    src: unsplash("1572802419224-296b0aeee0d9", 800),
+    width: 800,
+    height: 570,
+    alt: "Double cheeseburger with two smashed patties and dripping American cheese.",
+  },
+  gardenBurger: {
+    src: unsplash("1525059696034-4967a8e1dca2", 800),
+    width: 800,
+    height: 1198,
+    alt: "Veggie burger with a crisp patty, avocado and fresh greens in a soft bun.",
+  },
   cortado: {
     src: unsplash("1559496417-e7f25cb247f3"),
     width: 1200,

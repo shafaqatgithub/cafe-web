@@ -42,7 +42,7 @@ export const OFFERINGS: {
     title: "Artisan burgers",
     kicker: "From the grill",
     text: "Dry-aged beef, house brioche and a whisper of beech-wood smoke.",
-    image: MEDIA.burger,
+    image: MEDIA.smokeHouse,
     href: "#menu",
   },
   {
@@ -138,7 +138,7 @@ export const MENU_CATEGORIES: {
         name: "Margherita",
         description: "San Marzano, fior di latte, basil, Sicilian olive oil.",
         price: "14", // PLACEHOLDER price
-        image: MEDIA.pizzaLayers, // PLACEHOLDER photo
+        image: MEDIA.margherita,
         tags: ["V"],
         placeholder: true,
       },
@@ -146,14 +146,14 @@ export const MENU_CATEGORIES: {
         name: "Diavola",
         description: "Spicy Calabrian salami, smoked provola, chilli honey.",
         price: "17", // PLACEHOLDER price
-        image: MEDIA.oven, // PLACEHOLDER photo
+        image: MEDIA.diavola,
         placeholder: true,
       },
       {
         name: "Bianca al Tartufo",
         description: "Fior di latte, wild mushrooms, black truffle, thyme. No tomato.",
         price: "21", // PLACEHOLDER price
-        image: MEDIA.pizzaPeel, // PLACEHOLDER photo
+        image: MEDIA.bianca,
         tags: ["V"],
         placeholder: true,
       },
@@ -167,7 +167,7 @@ export const MENU_CATEGORIES: {
         name: "The Smoke House",
         description: "Dry-aged beef, aged cheddar, butter lettuce, tomato, beech-smoked mayo, sesame brioche.",
         price: "16", // PLACEHOLDER price
-        image: MEDIA.burger,
+        image: MEDIA.smokeHouse,
         tags: ["House"],
         placeholder: true,
       },
@@ -175,14 +175,14 @@ export const MENU_CATEGORIES: {
         name: "Ember Double",
         description: "Two smashed patties, American cheese, pickles, burnt-onion jam.",
         price: "18", // PLACEHOLDER price
-        image: MEDIA.burgerSmoke, // PLACEHOLDER photo
+        image: MEDIA.emberDouble,
         placeholder: true,
       },
       {
         name: "Garden Burger",
         description: "Roasted mushroom and lentil patty, smoked scamorza, rocket, tomato.",
         price: "15", // PLACEHOLDER price
-        image: MEDIA.burger, // PLACEHOLDER photo
+        image: MEDIA.gardenBurger,
         tags: ["V"],
         placeholder: true,
       },
